@@ -1,8 +1,8 @@
 #Site
-title: 水榭清松-Song Kong
-description: This is Song' home.
+title: My Awesome Blog
+description: This is kdjun97's home.
 logo: favicon.png
-url: ikongsong.com
+url: https://kdjun97.github.io/
 rss_url: /feed.xml
 
 # Jekyll
@@ -21,7 +21,7 @@ sass:
 
 # Comment
 comment:
-  disqus: kongsong    
+  disqus: DongJun    
   # duoshuo: kongsong
   # youyan: 2122392
   # laibili: MTAyMC8yODgzNC81NDA0
@@ -34,17 +34,17 @@ baidu_analytics: 5b31ffbbdc6cff18727f3adf75a03777    #from //hm.baidu.com/hm.js?
 # Author information:
 author:
   #resume: /resume
-  name: Song Kong     #the name of Blog section
-  about_me: I'm Song Kong. This is my online home & blog, where I share thoughts about front-end development, cloud computing, my daily life and other insteresting topics. Feel free to contact me by email if you have any question.
+  name: Kim Dong Jun     #the name of Blog section
+  about_me: I'm DongJun Kim. This is my online home & blog, where I share thoughts about front-end development, cloud computing, my daily life and other insteresting topics. Feel free to contact me by email if you have any question.
  
 # Social Links
-email:               hi@ikongsong.com
+email:               kdjun97@gmail.com
 #google.plus:        username
 #twitter:            username
-facebook:            kongsong
-github:              songkong
-stackoverflow:      6438519/song-kong   #from a "http://stackoverflow.com/users/123456/username" link
-linkedin:           kongsong
+facebook:            DJ
+github:              kdjun97
+#stackoverflow:      6438519/song-kong   #from a "http://stackoverflow.com/users/123456/username" link
+#linkedin:           kongsong
 #xing:              username
 #instagram:          username
 #lastfm:            username
