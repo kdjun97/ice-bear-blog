@@ -1,6 +1,5 @@
-# Blog of Kim Dongjun
+# Jekyll Ice Bear Theme
 This is a Jekyll theme called Ice bear.
-
 To learn how to install and use this theme, please check out the [installation guide](http://ikongsong.com/blog/ice-bear-jekyll-theme/) for more information.
 
 ## License
