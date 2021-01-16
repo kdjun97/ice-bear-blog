@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title:  Blog of Song
+title:  ICE BEAR Theme
 description: "List of posts"
 permalink: /blog/
 comment: true
