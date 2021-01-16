@@ -1,5 +1,5 @@
 #Site
-title: My Awesome Blog
+title: Ice Bear Blog
 description: This is kdjun97's home.
 logo: favicon.png
 url: https://kdjun97.github.io/
@@ -25,7 +25,7 @@ comment:
   # duoshuo: kongsong
   # youyan: 2122392
   # laibili: MTAyMC8yODgzNC81NDA0
-  gitalk: false
+  gitalk: true
 
 # Website analytics
 google_analytics: UA-82494501-1
@@ -34,14 +34,14 @@ baidu_analytics: 5b31ffbbdc6cff18727f3adf75a03777    #from //hm.baidu.com/hm.js?
 # Author information:
 author:
   #resume: /resume
-  name: Dongjun     #the name of Blog section
-  about_me: I'm DongJun Kim. This is my online home & blog, where I share thoughts about front-end development, cloud computing, my daily life and other insteresting topics. Feel free to contact me by email if you have any question.
+  name: DongJun     #the name of Blog section, 메인 Home에서 내리는 Blog Section
+  about_me: I'm DongJun Kim. This is my online home & blog, where I share my thoughts, my daily life and other insteresting topics. Feel free to contact me by email if you have any question.
  
 # Social Links
 email:               kdjun97@gmail.com
 #google.plus:        username
 #twitter:            username
-facebook:            DJ
+#facebook:            DJ
 github:              kdjun97
 #stackoverflow:      6438519/song-kong   #from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:           kongsong
