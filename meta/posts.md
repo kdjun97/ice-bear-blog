@@ -1,7 +1,8 @@
 ---
 layout: post-list
-title:  Ice Bear Blog! <!-- 이 tilte 부분이 blog부분 title-->
+title:  Ice Bear Blog!
 description: "List of posts"
 permalink: /blog/
-comment: false
+comment: true
 ---
+<!-- 이 tilte 부분이 blog부분 title-->
