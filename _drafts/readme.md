@@ -4,3 +4,4 @@
 2. CLI upgrade 관련  
 3. docker 설치 및 명령어 관련  
 4. git 명령어 정리  
+5. LINUX 명령어 정리  
