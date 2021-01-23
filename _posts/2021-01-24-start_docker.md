@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "도커(Docker) 입문"
-date:   2021-01-24 01:40:30 +0800
+date:   2021-01-24 01:40:30
 categories: [Tech]
 excerpt: Let's start Docker!
 tags:
