@@ -91,7 +91,6 @@ a옵션은 종료된 컨테이너까지 보여줌.
 - ```$ docker rm 35ce92c```  
 컨테이너는 삭제해도 컨테이너 하나만 삭제된다.  
 컨테이너에 쓰였던 이미지는 남아있어, 새로운 컨테이너를 다시 생성해서 다시 작업을 할 수 있다.    
-
 - ```$ docker rmi kdjun97/ubuntu```  
 (kdjun97/ubuntu 이미지 삭제)  
 하지만, 이미지를 삭제하면, 다시 다운받아야한다.  
@@ -115,6 +114,7 @@ Dockerfile을 작성했다면, docker build 명령어로 docker image를 생성 
 ---  
 
 #### Docker hub에 image 공유  
+
 1. 먼저, ``` $docker login```명령어로 docker에 login한다.  
 
 2. 이미지 태그  
