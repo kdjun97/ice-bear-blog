@@ -13,6 +13,8 @@ tags:
 > 출처: [GBC_Programmer_Base](https://ccss17.github.io/ProgrammerBase/docker/#_1)  
 정리에 앞서, 도커에 대한 설명이 위 출처에 상세하게 기록되어 있어 더 깊게 도커를 알아보고 싶으시면 위 출처를 참고하시기 바랍니다.  
 
+---  
+
 # 도커(Docker)에 대한 설명 
 
 도커(Docker)가 무엇인가?  
@@ -39,10 +41,11 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 ---  
   
 # 도커(Docker) 설치  
-## MacOS 환경에서 설치하기  
+---  
+#### MacOS 환경에서 설치하기  
 [Docker_Mac Install](https://hub.docker.com/editions/community/docker-ce-desktop-mac)  
 
-## Windows 환경에서 설치하기  
+#### Windows 환경에서 설치하기  
 아쉽게도, MAC과 달리, Windows OS는 설치가 조금 까다롭다.  
 
 1. 본인의 컴퓨터에 윈도우 버전 확인.  
@@ -61,7 +64,7 @@ Pro도 가능합니다.
 
 ---  
 
-# Docker에서 자주 쓰이는 명령어  
+#### Docker에서 자주 쓰이는 명령어  
 
 1. 컨테이너 이미지, 상태 확인  
 - 컨테이너 상태 확인  
@@ -97,7 +100,7 @@ a옵션은 종료된 컨테이너까지 보여줌.
 
 ---  
 
-# Dockerfile build    
+#### Dockerfile build    
 
 아까 Dockerfile을 build해서, docker image를 만든다고 하였다.  
 docker image를 만든 소스코드가 Dockerfile이다.
@@ -109,7 +112,7 @@ Dockerfile을 작성했다면, docker build 명령어로 docker image를 생성 
 
 ---  
 
-# Docker hub에 image 공유  
+#### Docker hub에 image 공유  
 1. 먼저, ``` $docker login```명령어로 docker에 login한다.  
 
 2. 이미지 태그  
