@@ -48,6 +48,8 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 
 [Docker_Mac Install](https://hub.docker.com/editions/community/docker-ce-desktop-mac)  
 
+---  
+
 #### Windows 환경에서 설치하기  
 
 아쉽게도, MAC과 달리, Windows OS는 설치가 조금 까다롭다.  
