@@ -59,7 +59,8 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 - Education으로 본인의 PC를 업그레이드 하셔야 Docker 사용에 문제가 없습니다.  
 - Pro도 가능합니다.  
 
-3. [Docker_Windows Install](https://hub.docker.com/editions/community/docker-ce-desktop-windows)에서 다운로드 받기  
+3. 설치  
+- [Docker_Windows Install](https://hub.docker.com/editions/community/docker-ce-desktop-windows)에서 다운로드 받기  
 
 4. Hyper-V enable → [BIOS] Intel - CPU Virtualization enable / AMD - SVM mode enable  
 - 이 부분은 내가 MSI 노트북을 썻을 때, 따로 셋팅하지 않았다.  
