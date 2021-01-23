@@ -50,8 +50,7 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 
 ---  
 
-#### Windows 환경에서 설치하기  
-  
+#### Windows 환경에서 설치하기
 아쉽게도, MAC과 달리, Windows OS는 설치가 조금 까다롭다.  
 
 1. 본인의 컴퓨터에 윈도우 버전 확인.  
@@ -118,7 +117,6 @@ Dockerfile을 작성했다면, docker build 명령어로 docker image를 생성 
 ---  
 
 #### Docker hub에 image 공유  
-
 1. 먼저, ``` $docker login```명령어로 docker에 login한다.  
 
 2. 이미지 태그  
