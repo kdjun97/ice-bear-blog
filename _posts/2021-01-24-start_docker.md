@@ -48,21 +48,16 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 
 [Docker_Mac Install](https://hub.docker.com/editions/community/docker-ce-desktop-mac)  
 
----  
-
 #### Windows 환경에서 설치하기
 아쉽게도, MAC과 달리, Windows OS는 설치가 조금 까다롭다.  
 
 1. 본인의 컴퓨터에 윈도우 버전 확인.  
 방법 : 내 컴퓨터(우클릭) - 속성 - Windows 버전 확인.  
-
 2. Windows 10 Home Edition이라면 업그레이드.    
 Home Edition을 사용중이라면, 에러가 뜰 수 있습니다.  
 Education으로 본인의 PC를 업그레이드 하셔야 Docker 사용에 문제가 없습니다.  
 Pro도 가능합니다.  
-
 3. [Docker_Windows Install](https://hub.docker.com/editions/community/docker-ce-desktop-windows)에서 다운로드 받기  
-
 4. Hyper-V enable → [BIOS] Intel - CPU Virtualization enable / AMD - SVM mode enable  
 이 부분은 내가 MSI 노트북을 썻을 때, 따로 셋팅하지 않았다.  
 이것은 노트북마다 다른 것 같다.  
@@ -118,13 +113,11 @@ Dockerfile을 작성했다면, docker build 명령어로 docker image를 생성 
 
 #### Docker hub에 image 공유  
 1. 먼저, ``` $docker login```명령어로 docker에 login한다.  
-
 2. 이미지 태그  
 ``` $ docker tag kdjun97/ubuntu kdjun97/ubuntu```  
 기존에 만든 kdjun97/ubuntu이미지에 kdjun97/ubuntu 태그를 추가하는 예(나는 똑같은 이름으로 했다.)  
 앞에 나온 kdjun97/ubuntu가 기존에 build한 이미지고 뒤에는 rename을 해도 무방하다.  
 보통, 버전도 붙여서 ```$ docker tag kdjun97/ubuntu kdj/ubun:1```이런식으로 적기도 한다.  
-
 3. Docker gub에 image 전송  
 ``` $ docker push kdjun97/ubuntu```  
 rename 한 예제,  
