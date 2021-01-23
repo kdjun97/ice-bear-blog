@@ -52,14 +52,17 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 아쉽게도, MAC과 달리, Windows OS는 설치가 조금 까다롭다.  
 
 1. 본인의 컴퓨터에 윈도우 버전 확인.  
-방법 : 내 컴퓨터(우클릭) - 속성 - Windows 버전 확인.</br></br>
+- 방법 : 내 컴퓨터(우클릭) - 속성 - Windows 버전 확인.  
+
 2. Windows 10 Home Edition이라면 업그레이드.    
-Home Edition을 사용중이라면, 에러가 뜰 수 있습니다.  
-Education으로 본인의 PC를 업그레이드 하셔야 Docker 사용에 문제가 없습니다.  
-Pro도 가능합니다.  
+- Home Edition을 사용중이라면, 에러가 뜰 수 있습니다.  
+- Education으로 본인의 PC를 업그레이드 하셔야 Docker 사용에 문제가 없습니다.  
+- Pro도 가능합니다.  
+
 3. [Docker_Windows Install](https://hub.docker.com/editions/community/docker-ce-desktop-windows)에서 다운로드 받기  
+
 4. Hyper-V enable → [BIOS] Intel - CPU Virtualization enable / AMD - SVM mode enable  
-이 부분은 내가 MSI 노트북을 썻을 때, 따로 셋팅하지 않았다.  
+- 이 부분은 내가 MSI 노트북을 썻을 때, 따로 셋팅하지 않았다.  
 이것은 노트북마다 다른 것 같다.  
 
 ---  
