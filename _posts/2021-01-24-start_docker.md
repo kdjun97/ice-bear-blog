@@ -37,6 +37,7 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 즉, Ubuntu Linux의 환경 담은 가상환경이 만들어지는 것이다.  
 
 > 이 기술로 Window에서도 Ubuntu Linux를 사용할 수 있다!  
+> 혹은 Local에서 작업하기 꺼려지는 부분들을 도커에서 사용할 수도 있다!  
 
 ---  
   
