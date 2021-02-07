@@ -2,8 +2,8 @@
 layout: post
 title:  "Project 시작"
 date:   2021-02-01 14:40:30 +0800
-categories: [Life]
-excerpt: About Github and git
+categories: [Tech]
+excerpt: Using Flutter, I'm gonna make a program to communicate lots of clients.
 tags:
   - Project
 ---
