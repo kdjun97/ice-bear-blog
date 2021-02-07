@@ -51,11 +51,11 @@ Key Logger를 선택한 이유는 다른 프로그램들 보다 훨씬 흥미롭
 이런식으로 전역적으로 키보드를 후킹해서, 실시간으로 어떤 키가 눌렸는지 알려주는 프로그램을 c#으로 만들어봤다.~~사실 이걸 위해 만든건 아니지만~~  
 > 참고: Hooking(후킹)은 이벤트가 Windows Message Queue 에서 Application Message Queue 로 넘어갈 때, 메세지를 중간에서 가로채는 것을 뜻한다.  
 
-![hookProc](/assets/images/KeyLogger/hookProc.PNG)  
+<!-- ![hookProc](/assets/images/KeyLogger/hookProc.PNG) -->  
 우리는 Global Hooking을 이용하여, 키보드든 마우스든 이벤트를 가로챌 수 있다.  
-++ 하지만, 이런 후킹을 막는 프로그램이 있기에 DLL injection이라는 기술을 생각했었다  
+++ 하지만, 이런 후킹을 막는 프로그램이 있기에 DLL Injection이라는 기술을 생각했었다  
 GHOST gbc 보안주차에서도 다뤘던 내용이기에, 키로거를 만들어 보았고, 악용하면 충분히 타격이 큰 프로그램임에는 틀림없다.  
-우리는 착한 아이들이니까 악용할 생각은 하지말자.  
+우리는 착한 어린이들이니까 악용할 생각은 하지말자.  
 
 ---  
 
