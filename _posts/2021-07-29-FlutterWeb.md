@@ -29,7 +29,7 @@ $ flutter build web
   - ![firebase3](/assets/images/flutter_web/firebase3.png) 
   - 자신의 flutter project 디렉토리 안의 web폴더에 index.html에 위와 같은 스크립트를 넣어주면 됨.  
   - firebase auth를 사용하려고 했는데, 에러를 직면했고, index.html에 다음이 필요하다는 것을 알게 됨.  
-  ```{.dart}
+  ```{.html}
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
