@@ -28,6 +28,13 @@ $ flutter build web
   - 이름을 설정하고 import해야하는 부분을 import해줌.
   - ![firebase3](/assets/images/flutter_web/firebase3.png) 
   - 자신의 flutter project 디렉토리 안의 web폴더에 index.html에 위와 같은 스크립트를 넣어주면 됨.  
+  - firebase auth를 사용하려고 했는데, 에러를 직면했고, index.html에 다음이 필요하다는 것을 알게 됨.  
+  ```{.dart}
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  ```
   - 필요할 경우 terminal에서 **flutter build web** 으로 다시 빌드 하고 다시 chrome으로 실행
 4. 결과  
 ![firebase4](/assets/images/flutter_web/firebase4.PNG)  
