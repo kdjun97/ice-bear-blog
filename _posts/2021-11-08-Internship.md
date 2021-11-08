@@ -1,4 +1,16 @@
-**2021 하계 인턴**
+---
+layout: post
+title:  "Internship"
+date:   2021-11-08 21:00:00
+categories: [Tech]
+excerpt: 어플리케이션 개발  
+tags:
+  - Flutter
+  - Web
+  - Internship
+---
+
+### 2021 하계 인턴
 
 기간 : 2021.06.21 ~ 2021.08.27  
 회사명 : 주식회사홀잡펠이펙티브마이크로브스  
