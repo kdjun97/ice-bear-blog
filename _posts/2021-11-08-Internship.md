@@ -6,4 +6,4 @@
 근무부서 : 사업팀 개발부부  
 담당업무 : 어플리케이션 관리 및 개선  
 
-더 자세한 정보 [여기](http://internship.handong.edu)
+더 자세한 정보 [여기](http://internship.handong.edu)  
