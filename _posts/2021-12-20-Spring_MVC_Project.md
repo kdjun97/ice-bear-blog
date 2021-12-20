@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Web Project"
+title:  "Spring MVC Web Project"
 date:   2021-12-20 21:00:00
 categories: [Tech]
 excerpt: 스프링 프레임 워크 개발
