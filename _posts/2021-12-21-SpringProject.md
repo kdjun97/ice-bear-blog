@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Spring Project"
-date:   2021-12-21 13:00:00
+title:  "t 시작"
+date:   2021-12-20 14:40:30 +0800
 categories: [Tech]
-excerpt: Spring MVC Project(Web)
+excerpt: Project Test
 tags:
-  - Web
-  - Spring
-  - Java
   - Project
+  - Flutter
+  - GHOST
+  - GBC
 ---
 
 # Test
