@@ -24,6 +24,7 @@ tags:
   - STS 4.11.1  
   - jre 1.8  
 - Deploy URL: [Deploy Link Here](https://angel10004.herokuapp.com/)
+- Github URL : https://github.com/kdjun97/Car_Sharing_Manager
 
 **Description**  
 카풀 이용자와 카풀 운전자끼리 연결을 맺어주고, 입금 관리까지 도와주는 서비스이다.  
@@ -42,16 +43,7 @@ tags:
 디비 이미지 삽입
 
 **History**
-```
-fdfd
-dslkfjf
-dflskdjf
-fldkfjdslfkj
-dflkdjfld
-fldkfjd
-fdjlfkdjf
-
-```
+Github 참고.  
 
 ---  
 
