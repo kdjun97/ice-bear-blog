@@ -18,9 +18,40 @@ tags:
 
 각설하고, 바로 본론으로 들어가보자.  
 
-**개발환경**  
-- STS 4.11.1  
-- jre 1.8  
+**Info**  
+- Version : 1.0.0  
+- Development Environment
+  - STS 4.11.1  
+  - jre 1.8  
+- Deploy URL: [Deploy Link Here](https://angel10004.herokuapp.com/)
+
+**Description**  
+카풀 이용자와 카풀 운전자끼리 연결을 맺어주고, 입금 관리까지 도와주는 서비스이다.  
+이 서비스에는 특이한 기능이 있는데, 그 기능은 black 기능이다.  
+입금을 하지 않았던 사용자의 black값이 count되고, 그 count는 방에서 값이 보여지게끔 되어있다.  
+따라서, 이용자로 하여금 경각심을 가지게 하며, 서로 거래를 깔끔하게 하자는 취지로 만든 간단한 웹이다.(사실은 카풀 운전자들의 의견을 수렴하여 만든 웹이기도 하다.)  
+
+**Usage**  
+회원가입을 하고, session 정보가 있는 회원만 들어갈 수 있다.  
+또한, room 하나에는 이용자 한 명만 들어갈 수 있다.  
+방장만이 입금 여부와 추방을 할 수 있는 권한이 있고, 방을 만들 때, contents를 넣을 수 있게 하여 메시지를 표시하게 했다.  
+운행을 마친 카풀 운전자(방장)가 방을 파기할 수 있다.  
+이렇게 간이로 카풀 운전자와 카풀 이용자끼리 방을 만들어 매칭을 시켜줄 수 있고, 인원은 최대 4명으로 제한되어있다.  
+
+**DB Schema**
+디비 이미지 삽입
+
+**History**
+```
+fdfd
+dslkfjf
+dflskdjf
+fldkfjdslfkj
+dflkdjfld
+fldkfjd
+fdjlfkdjf
+
+```
 
 ---  
 
