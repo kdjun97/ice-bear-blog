@@ -71,3 +71,6 @@ Tomcat
 2. 새 프로젝트 생성  
   - File -> New -> Spring Legacy Project -> Spring MVC Project  
   ![MVC](/assets/images/Spring_MVC/mvc.jpg)  
+
+
+DAO, VO, Service단, mapper query단, survlet단 library 포함, war file deploy 다 적어야함.  
