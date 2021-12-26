@@ -35,7 +35,7 @@ baidu_analytics: 5b31ffbbdc6cff18727f3adf75a03777    #from //hm.baidu.com/hm.js?
 author:
   #resume: /resume
   name: DongJun     #the name of Blog section, 메인 Home에서 내리는 Blog Section
-  about_me: &nbsp DongJun Kim<br>한동대학교 전산전자공학부<br>Github :https://github.com/kdjun97
+  about_me: <br>Dongjun Kim<br>Handong Global University majoring in Computer Science<br>Github :https://github.com/kdjun97
  
 # Social Links
 email:               kdjun97@gmail.com
