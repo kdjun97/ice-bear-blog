@@ -15,7 +15,7 @@ tags:
 
 학기 중, 간단한 웹 서비스를 만드는 프로젝트가 있었다.  
 기간은 사실상 거의 2주?도 안줬던 것 같다.  
-나와 다른 친구 2명이서 협업했고, 한 친구는 css와 포스터 제작을 맡았다.  
+나와 다른 친구 총 2명이서 협업했고, 친구는 css와 포스터 제작을 맡았다.  
 
 각설하고, 바로 본론으로 들어가보자.  
 
@@ -25,7 +25,9 @@ tags:
   - STS 4.11.1  
   - jre 1.8  
 - Deploy URL: [Deploy Link Here](https://angel10004.herokuapp.com/)  
-- Github URL : [Github Link Here](https://github.com/kdjun97/Car_Sharing_Manager)
+- Github URL : [Github Link Here](https://github.com/kdjun97/Car_Sharing_Manager)  
+
+> heroku를 이용하여, 무료 호스팅 및 deploy함.  
 
 **Description**  
 카풀 이용자와 카풀 운전자끼리 연결을 맺어주고, 입금 관리까지 도와주는 서비스이다.  
