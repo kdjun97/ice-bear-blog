@@ -60,7 +60,7 @@ Github 참고.
 #### DB
 
 DB는 학교에서 제공해준 phpMyAdmin 서버를 이용하였다.  
-Tomcat  
+Tomcat 얘기  
 
 **Database 구상**  
 - ㅁㄴㅇㄹ  
