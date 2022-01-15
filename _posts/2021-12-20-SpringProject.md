@@ -36,6 +36,7 @@ tags:
 따라서, 이용자로 하여금 경각심을 가지게 하며, 서로 거래를 깔끔하게 하자는 취지로 만든 간단한 웹이다.(사실은 카풀 운전자들의 의견을 수렴하여 만든 웹이기도 하다.)  
 
 **Usage**  
+
 회원가입을 하고, session 정보가 있는 회원만 들어갈 수 있다.  
 또한, room 하나에는 이용자 한 명만 들어갈 수 있다.  
 방장만이 입금 여부와 추방을 할 수 있는 권한이 있고, 방을 만들 때, contents를 넣을 수 있게 하여 메시지를 표시하게 했다.  
@@ -43,10 +44,26 @@ tags:
 이렇게 간이로 카풀 운전자와 카풀 이용자끼리 방을 만들어 매칭을 시켜줄 수 있고, 인원은 최대 4명으로 제한되어있다.  
 
 **DB Schema**
-디비 이미지 삽입
+
+db 초기 설계  
+![MVC](/assets/images/Spring_MVC/db.jpg)  
+
+후에 이렇게 바뀜. (쿼리문임을 양해 바람. black_list 테이블 제거)  
+![MVC](/assets/images/Spring_MVC/db2.JPG)  
 
 **History**
+
 Github 참고.  
+
+**Paging**  
+
+![MVC](/assets/images/Spring_MVC/page.jpg)  
+
+바빠서 그냥 손으로 그렸음. 양해 부탁.  
+
+**Directory**
+
+![MVC](/assets/images/Spring_MVC/directory.png)  
 
 ---  
 
@@ -57,22 +74,22 @@ Github 참고.
 그리고, JDBC 등 기술을 위한 다양한 템플릿을 제공해준다.  
 결과적으로, **Java를 위한 가장 인기있는 애플리케이션 개발 프레임워크**이기 때문에, Spring framework로 개발을 진행할 것이다.  
 
-#### DB
+#### 서버
 
-DB는 학교에서 제공해준 phpMyAdmin 서버를 이용하였다.  
-Tomcat 얘기  
+학교에서 제공해준 phpMyAdmin 서버를 이용하였다.  
 
-**Database 구상**  
-- ㅁㄴㅇㄹ  
+Local에서 돌려볼 땐, Tomcat으로 돌렸다.  
 
+#### 프로젝트 결과
 
-#### 진짜 프로젝트 시작
+DAO(Data Access Object), VO(Value Object), Controller, Service class로 유지보수를 쉽게 가져가기 위해 각 기능을 담당하는 분리되는 클래스를 만듦.  
+DB관련 query문은 mapper package에 다 넣음.  
+각 페이지들은 views 폴더 안에 .jsp 형태로 존재.  
+deploy는 heroku를 이용하여 하였음.  
 
-1. STS4(Spring 3 Add-on 설치)  
-  - Help -> Eclipse Marketplace에서 설치.  
-2. 새 프로젝트 생성  
-  - File -> New -> Spring Legacy Project -> Spring MVC Project  
-  ![MVC](/assets/images/Spring_MVC/mvc.jpg)  
+이번 프로젝트는 유지&보수를 위해 디렉토리 구조에 대해 신경을 많이 썼고, query문은 mapper에 넣는 등 실제로 서비스 구현 및 유지 보수에 대해 최대한 관리가 쉽게끔 코드를 짰다.  
 
+웹 프로젝트를 이렇게 까지 만들어 본 적은 처음이다.  
+최대한 client의 편의와 개발자의 편의를 같이 고려하여 db를 짜고, page를 구성했고, 프로젝트 시작 전 큰 틀을 잡고 시작한 프로젝트였다.  
 
-DAO, VO, Service단, mapper query단, survlet단 library 포함, war file deploy 다 적어야함.  
+지금 이 프로젝트는 규모가 작지만, 나중에 큰 프로젝트를 진행할 때는 이런 식의 구조화가 필요하고, 프로젝트를 무작정 시작하기 보다는 뭘 할지 구상해보고 계획을 잡고 개발을 해야겠다고 느꼈다.  
