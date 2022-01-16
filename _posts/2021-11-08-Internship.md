@@ -59,7 +59,7 @@ Goal : image -> Text -> ROI에서 수치 추출
 3. `Parsing Data 1`  
   * 2번을 일단 customized model에 넣어서 1차적으로 data를 정리한다.  
   ![result_paper_model](/assets/images/HEM/ocr/result_paper_model.PNG)  
-  위 그림과 같고, <u>List<model><u>으로 넣어주었다. 각 index에는 text description과 아래 그림과 같이 4개의 point가 있다.
+  위 그림과 같고, `List<model>`으로 넣어주었다. 각 index에는 text description과 아래 그림과 같이 4개의 point가 있다.
   ![point](/assets/images/HEM/ocr/point.PNG)  
   ![rect_sample](/assets/images/HEM/ocr/rect_sample.PNG)  
     
