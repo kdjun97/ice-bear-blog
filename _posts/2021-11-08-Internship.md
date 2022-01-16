@@ -25,7 +25,7 @@ tags:
 
 ### 개발했던 기능
 
-1. Text_Recognition  
+``Text_Recognition``  
   - GCP(Google Cloud Platform)에서 Cloud Vision사용.  
   - API 호출을 통해 Text_Recognition(OCR) option 사용. ROI Text추출, 추출한 value db에 올리는 과정을 담당.  
   - 이 기능을 이용하여, 건강검진 데이터에서 원하는 region에 있는 값들을 추출하여 db에 올릴 수 있음.  
@@ -104,7 +104,7 @@ Goal : image -> Text -> ROI에서 수치 추출
 
 ---  
 
-2. AutoML Vision
+``AutoML Vision``  
   - AutoML Vision의 성능을 테스트하기 위해 진행된 테스트 프로젝트 진행  
   - 따로 모델을 학습시키는 과정을 포함하지 않고, AutoML에서 제공해주는 Vision 모델로 자동으로 학습을 시킴.  
   - 수동으로 사진을 올리고, 사진에 대해 label들을 달아줌.  
@@ -124,4 +124,4 @@ Goal : image -> Text -> ROI에서 수치 추출
 
 ---  
 
-3. AutoML Labeling Web  
+``AutoML Labeling Web``  
