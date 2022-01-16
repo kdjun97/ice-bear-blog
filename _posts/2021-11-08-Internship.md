@@ -41,13 +41,13 @@ Goal : image -> Text -> ROI에서 수치 추출
 1. `User가 camera로 사진을 찍음.`
   * `edge_detection` plugin 사용, edge 추출을 기반으로 rect에 4개의 point를 추출.  
   * 추출된 point로 perspective transform을 수행.  
-    * ![perspective transform1](/assets/images/HEM/ocr/perspective_transform.PNG)  
-    * ![perspective transform2](/assets/images/HEM/ocr/perspective_transform2.PNG) 
-    * 위 그림을 참고하면 `perspective transform`을 쉽게 이해 가능할 것이다.  이 과정은 input image를 보다 정확하게 인식하기 위해 꼭 필요한 기능임.  
+    - ![perspective transform1](/assets/images/HEM/ocr/perspective_transform.PNG)  [출처 : OpenCV Perspective Transformation](https://miatistory.tistory.com/5)  
+    - ![perspective transform2](/assets/images/HEM/ocr/perspective_transform2.PNG)  
+    - 위 그림을 참고하면 `perspective transform`을 쉽게 이해 가능할 것이다.  이 과정은 input image를 보다 정확하게 인식하기 위해 꼭 필요한 기능임.  
   * ![edge detection](/assets/images/HEM/ocr/edge_detection.jpg)  
-    * 또한, 위 사진과 같이 각 point를 늘리거나 줄일 수 있음(이동 가능)
-    * 정밀한 조정이 가능.
-    * 이 4개의 point로 perspective trasnform 수행.
+    - 또한, 위 사진과 같이 각 point를 늘리거나 줄일 수 있음(이동 가능)
+    - 정밀한 조정이 가능.
+    - 이 4개의 point로 perspective trasnform 수행.
   * **pre_processing된 Image를 저장.**  
     
 2. `Text Recognition`
@@ -58,21 +58,21 @@ Goal : image -> Text -> ROI에서 수치 추출
     
 3. `Parsing Data 1`  
   * 2번을 일단 customized model에 넣어서 1차적으로 data를 정리한다.  
-    * ![result_paper_model](/assets/images/HEM/ocr/result_paper_model.PNG)
-    * 위 그림과 같고, List<model>으로 넣어주었다. 각 index에는 text description과 아래 그림과 같이 4개의 point가 있다.
-    * ![point](/assets/images/HEM/ocr/point.PNG)
-    * ![rect_sample](/assets/images/HEM/ocr/rect_sample.PNG)  
+    - ![result_paper_model](/assets/images/HEM/ocr/result_paper_model.PNG)
+    - 위 그림과 같고, List<model>으로 넣어주었다. 각 index에는 text description과 아래 그림과 같이 4개의 point가 있다.
+    - ![point](/assets/images/HEM/ocr/point.PNG)
+    - ![rect_sample](/assets/images/HEM/ocr/rect_sample.PNG)  
     
 4. `Parsing Data 2`
   * p1이라는 절대적인 point를 기준으로 삼고, p1의 x좌표를 기준으로 sort를 함.  
   * List의 모든 요소들이 x좌표를 기준으로 sorting됨.  
   * row 1줄을 인식하여 그곳에서 원하는 데이터를 뽑음.(아래 빨간줄에 걸리는 모든 text들을 동일한 row라고 판단)
   * ![row](/assets/images/HEM/ocr/row.jpg)  
-    * 위 그림과 같이 '공복'이라는 text를 인식하고, '공복'에 해당하는 point를 알아낸다. 그 point들의 y좌표 근처에 있는 요소들만 뽑아내면 row 1줄을 얻어낼 수 있다.  
-    * 위 그림을 예시로 들자면, '당뇨병', '공복', '혈당', '(' 'mg', '/' 'dL', ')', '54', '100.0', '미만'... 등이 나올 것이다.  
-    * 여기서 숫자에 해당하는 데이터만 뽑아 내가 원하는 수치를 뽑을 수 있다.  
-    * 또한 위에서 <u>x좌표로 sort</u>를 해준 이유가 여기 있는데, x좌표로 sorting을 하고 나면, 처음 숫자가 나온 index에 내가 원하는 공복혈당 수치인 `54`를 뽑을 수 있게 된다.
-    * 이런 방식으로 모든 원하는 수치들을 row 1줄 기준으로 뽑는다.  
+    - 위 그림과 같이 '공복'이라는 text를 인식하고, '공복'에 해당하는 point를 알아낸다. 그 point들의 y좌표 근처에 있는 요소들만 뽑아내면 row 1줄을 얻어낼 수 있다.  
+    - 위 그림을 예시로 들자면, '당뇨병', '공복', '혈당', '(' 'mg', '/' 'dL', ')', '54', '100.0', '미만'... 등이 나올 것이다.  
+    - 여기서 숫자에 해당하는 데이터만 뽑아 내가 원하는 수치를 뽑을 수 있다.  
+    - 또한 위에서 <u>x좌표로 sort</u>를 해준 이유가 여기 있는데, x좌표로 sorting을 하고 나면, 처음 숫자가 나온 index에 내가 원하는 공복혈당 수치인 `54`를 뽑을 수 있게 된다.
+    - 이런 방식으로 모든 원하는 수치들을 row 1줄 기준으로 뽑는다.  
   * user model이라는 새로운 모델에 parsing 완료된 값들을 넣는다.  
   * input image sample:  
     - ![input_img_sample](/assets/images/HEM/ocr/input_sample.jpg)  
