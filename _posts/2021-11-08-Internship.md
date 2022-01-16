@@ -59,7 +59,7 @@ Goal : image -> Text -> ROI에서 수치 추출
 3. `Parsing Data 1`  
   * 2번을 일단 customized model에 넣어서 1차적으로 data를 정리한다.  
   ![result_paper_model](/assets/images/HEM/ocr/result_paper_model.PNG)  
-  위 그림과 같고, List<model>으로 넣어주었다. 각 index에는 text description과 아래 그림과 같이 4개의 point가 있다.  
+  위 그림과 같고, <u>List<model><u>으로 넣어주었다. 각 index에는 text description과 아래 그림과 같이 4개의 point가 있다.
   ![point](/assets/images/HEM/ocr/point.PNG)  
   ![rect_sample](/assets/images/HEM/ocr/rect_sample.PNG)  
     
@@ -88,7 +88,7 @@ Goal : image -> Text -> ROI에서 수치 추출
   따라서 '/'가 포함되었다면, '/'를 지우고 난 뒤, isDigit함수에 text를 넣는 방식으로 코드를 바꾸었다.  
   테스트 샘플에서 y값으로 인해 row에서 data하나가 빠지는 현상을 발견했다.  
   기존에는 1/2값으로 row를 판단하였지만, 지금은 1/5값과 4/5값으로 row를 판단하게 바꾸었다.  
-  [row](/assets/images/HEM/ocr/row_change.png)  
+  ![row](/assets/images/HEM/ocr/row_change.png)  
   * 하나씩 모델을 적용시켜보면서 case를 추가시키고 조건문을 바꾸며 최종적인 코드로는 8장 모두 정확도 100%로 인식했다.  
   ![test_img_result](/assets/images/HEM/ocr/test_img1.jpg)  
   ![test_img_result](/assets/images/HEM/ocr/test_img2.jpg)  
