@@ -40,14 +40,17 @@ Goal : image -> Text -> ROI에서 수치 추출
 
 1. `User가 camera로 사진을 찍음.`
   * `edge_detection` plugin 사용, edge 추출을 기반으로 rect에 4개의 point를 추출.  
+
   * 추출된 point로 perspective transform을 수행.  
     - ![perspective transform1](/assets/images/HEM/ocr/perspective_transform.PNG)  [출처 : OpenCV Perspective Transformation](https://miatistory.tistory.com/5)  
     - ![perspective transform2](/assets/images/HEM/ocr/perspective_transform2.PNG)  
     - 위 그림을 참고하면 `perspective transform`을 쉽게 이해 가능할 것이다.  이 과정은 input image를 보다 정확하게 인식하기 위해 꼭 필요한 기능임.  
+
   * ![edge detection](/assets/images/HEM/ocr/edge_detection.jpg)  
     - 또한, 위 사진과 같이 각 point를 늘리거나 줄일 수 있음(이동 가능)
     - 정밀한 조정이 가능.
-    - 이 4개의 point로 perspective trasnform 수행.
+    - 이 4개의 point로 perspective trasnform 수행.  
+
   * **pre_processing된 Image를 저장.**  
     
 2. `Text Recognition`
@@ -73,22 +76,26 @@ Goal : image -> Text -> ROI에서 수치 추출
     - 여기서 숫자에 해당하는 데이터만 뽑아 내가 원하는 수치를 뽑을 수 있다.  
     - 또한 위에서 <u>x좌표로 sort</u>를 해준 이유가 여기 있는데, x좌표로 sorting을 하고 나면, 처음 숫자가 나온 index에 내가 원하는 공복혈당 수치인 `54`를 뽑을 수 있게 된다.
     - 이런 방식으로 모든 원하는 수치들을 row 1줄 기준으로 뽑는다.  
+
   * user model이라는 새로운 모델에 parsing 완료된 값들을 넣는다.  
   * input image sample:  
     - ![input_img_sample](/assets/images/HEM/ocr/input_sample.jpg)  
+
   * output model sample:  
     - ![parsing complete](/assets/images/HEM/ocr/result.PNG)  
     - bmi는 몸무게/키(m)^2 공식으로 저체중, 정상, 과체중, 비만임을 식별한다(계산식을 사용해서 식별)
     
 5. `다양한 인풋 이미지들로 성능 분석`
   * 다양하진 않고 8장의 사진들로 성능을 테스트 해보았다.
-    - ![test_img](/assets/images/HEM/ocr/test_img.jpg)
+    - ![test_img](/assets/images/HEM/ocr/test_img.jpg)  
+
   * 한 두개씩 data를 못뽑는 경우가 간혹 있었다.  
     - 첫번째로 `isDigit`함수로 row 1줄에서 숫자를 뽑는 부분에서, 예를들면 키 '180.0/' 이런식으로 '/'가 같이 인식이 되어 값이 제대로 들어가지 않는 현상이 발견됐다.  
     따라서 '/'가 포함되었다면, '/'를 지우고 난 뒤, isDigit함수에 text를 넣는 방식으로 코드를 바꾸었다.  
     - 테스트 샘플에서 y값으로 인해 row에서 data하나가 빠지는 현상을 발견했다.  
     기존에는 1/2값으로 row를 판단하였지만, 지금은 1/5값과 4/5값으로 row를 판단하게 바꾸었다.  
     ![row](/assets/images/HEM/ocr/row_change.png)  
+
   * 하나씩 모델을 적용시켜보면서 case를 추가시키고 조건문을 바꾸며 최종적인 코드로는 8장 모두 정확도 100%로 인식했다.
     - ![test_img_result](/assets/images/HEM/ocr/test_img1.jpg)
     - ![test_img_result](/assets/images/HEM/ocr/test_img2.jpg)
