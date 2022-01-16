@@ -41,13 +41,14 @@ Goal : image -> Text -> ROI에서 수치 추출
 1. `User가 camera로 사진을 찍음.`
   * `edge_detection` plugin 사용, edge 추출을 기반으로 rect에 4개의 point를 추출.  
   * 추출된 point로 perspective transform을 수행.  
-    - ![perspective transform1](/assets/images/HEM/ocr/perspective_transform.PNG)  [출처 : OpenCV Perspective Transformation](https://miatistory.tistory.com/5)  
-    - ![perspective transform2](/assets/images/HEM/ocr/perspective_transform2.PNG)  
-    - 위 그림을 참고하면 `perspective transform`을 쉽게 이해 가능할 것이다.  이 과정은 input image를 보다 정확하게 인식하기 위해 꼭 필요한 기능임.  
+  ![perspective transform1](/assets/images/HEM/ocr/perspective_transform.PNG)  
+  [출처 : OpenCV Perspective Transformation](https://miatistory.tistory.com/5)  
+  ![perspective transform2](/assets/images/HEM/ocr/perspective_transform2.PNG)  
+  위 그림을 참고하면 `perspective transform`을 쉽게 이해 가능할 것이다.  이 과정은 input image를 보다 정확하게 인식하기 위해 꼭 필요한 기능임.  
   * ![edge detection](/assets/images/HEM/ocr/edge_detection.jpg)  
-    - 또한, 위 사진과 같이 각 point를 늘리거나 줄일 수 있음(이동 가능)
-    - 정밀한 조정이 가능.
-    - 이 4개의 point로 perspective trasnform 수행.  
+  또한, 위 사진과 같이 각 point를 늘리거나 줄일 수 있음(이동 가능)  
+  정밀한 조정이 가능.  
+  이 4개의 point로 perspective trasnform 수행.  
   * **pre_processing된 Image를 저장.**  
     
 2. `Text Recognition`
