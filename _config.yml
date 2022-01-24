@@ -25,7 +25,7 @@ comment:
   # duoshuo: kongsong
   # youyan: 2122392
   # laibili: MTAyMC8yODgzNC81NDA0
-  gitalk: false
+  gitalk: true
 
 # Website analytics
 google_analytics: UA-82494501-1
