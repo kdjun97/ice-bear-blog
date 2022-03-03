@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "두번째 인턴십"
-date:   2022-03-03 22:00:00
+date:   2022-03-02 01:20:30 +0800
 categories: [Life]
 excerpt: 인턴십 시작.
 tags:
