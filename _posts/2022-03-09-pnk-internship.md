@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Internship2"
+date:   2022-03-02 01:20:30 +0800
+categories: [Tech]
+excerpt: Android App Development
+tags:
+  - Internship
+  - Android App
+  - Flutter
+---
+
+# ICT 학점연계 프로젝트 인턴십
+
+기간 : [2022.03.02 ~ 2022.06.30]  
+소재지 : 경기도 화성시 동탄  
+
+### Task 1 (원격노지 PoC 앱 개발)  
+
+기간 : [2022-03.02 ~ 2022.03.11]  
+
+Flutter를 이용하여 PoC Android App을 개발.  
+하드웨어 팀과 협업을 하였음.  
+
+- getX 사용
+  - 상태 관리, 라우트 관리, 의존성 관리  
+  - Obx로 Real-Time-Data Read 가능.  
+- DB(MySQL)
+  - dothome에서 웹 호스팅을 함.  
+  - dothome 서버에 php파일을 올려 db conn을 함.  
+  - FTP(FileZilla) 이용, php파일 서버에 올림.  
+  - Flutter에서는 http 호출으로 서버에 올린 php파일을 읽음.  
+  - Response를 json으로 convert하여 data parsing 후 사용.  
+- UI
+  - Flutter Plugin 사용  
