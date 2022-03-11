@@ -16,11 +16,13 @@ tags:
 소재지 : 경기도 화성시 동탄  
 업무 : Android App 개발  
 
-### Task 1 (원격노지 PoC 앱 개발)  
+---  
+
+### Task 1 (원격노지 HMI PoC 앱 개발)  
 
 기간 : [2022-03.02 ~ 2022.03.11]  
 
-Flutter를 이용하여 PoC Android App을 개발.  
+업무 : Flutter를 이용하여 원격노지 HMI PoC Android App을 개발.  
 하드웨어 팀과 협업을 하였음.  
 
 - getX 사용
@@ -34,3 +36,11 @@ Flutter를 이용하여 PoC Android App을 개발.
   - Response를 json으로 convert하여 data parsing 후 사용.  
 - UI
   - Flutter Plugin 사용  
+
+
+### Extra Task
+
+기간 : [2022-03-11 ~ 2022.??.??]  
+
+업무 : Arduino ESP32 BLE (IoT를 위한 모듈 만들기)  
+ESP32 Board에서 data I/O 처리를 해주는 app 개발  
