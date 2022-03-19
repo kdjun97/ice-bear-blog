@@ -17,6 +17,7 @@ Developed: [2021.02.01 ~ 2021.02.28]
 Development Environment:  Flutter 1.22.6, Android Studio 4.1.0  
 Version: 1.0.0  
 [Github Link](https://github.com/kdjun97/Liar_Game_Flutter)  
+[핸드폰 4개로 플레이한 영상](https://youtu.be/hkoSDTKN9dQ)  
 ![img](/assets/images/Project_Liar/title.jpg)  
 
 ---  
@@ -215,8 +216,5 @@ data송수신은 채팅창에 쓴 내용과 함께 자신의 아이피+닉네임
 
 서버 핸드폰에서 녹화영상   
 ![srv_play](/assets/images/Project_Liar/srv_play.gif)  
-
-핸드폰 4대 플레이 영상 링크  
-[링크 요기](https://youtu.be/hkoSDTKN9dQ)  
 
 이 포스트에 대한 피드백은 언제나 환영이다.  
