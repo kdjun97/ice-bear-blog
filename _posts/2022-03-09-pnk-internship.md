@@ -6,7 +6,7 @@ categories: [Tech]
 excerpt: Android App Development
 tags:
   - Internship
-  - Android App
+  - Android
   - Flutter
 ---
 
