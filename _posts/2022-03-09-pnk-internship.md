@@ -8,6 +8,8 @@ tags:
   - Internship
   - Android
   - Flutter
+  - App
+  - Arduino
 ---
 
 # ICT 학점연계 프로젝트 인턴십

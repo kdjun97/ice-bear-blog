@@ -6,7 +6,7 @@ categories: [Tech]
 excerpt: Flutter로 UI 구현하기.  
 tags:
   - Flutter
-
+  - App
 ---
 
 ### Flutter UI 

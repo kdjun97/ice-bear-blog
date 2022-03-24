@@ -7,6 +7,7 @@ excerpt: firebase로 database를 연동시켜 flutter에 적용시키기.
 tags:
   - Flutter
   - Firebase
+  - App
 ---
 
 ### flutter with firebase

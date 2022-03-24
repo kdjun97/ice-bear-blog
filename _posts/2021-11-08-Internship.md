@@ -8,6 +8,8 @@ tags:
   - Flutter
   - Web
   - Internship
+  - Android
+  - App
 ---
 
 ### 2021 하계 인턴

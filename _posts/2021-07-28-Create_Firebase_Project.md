@@ -7,6 +7,7 @@ excerpt: Firebase Project 셋팅
 tags:
   - Flutter
   - Firebase
+  - App
 ---
 
 ### Firebase Project 파는 법 

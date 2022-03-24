@@ -9,6 +9,9 @@ tags:
   - Flutter
   - GHOST
   - GBC
+  - App
+  - Android
+  - Socket
 ---
 
 Project Title: 승화는_거짓말쟁이 (Liar Game)  

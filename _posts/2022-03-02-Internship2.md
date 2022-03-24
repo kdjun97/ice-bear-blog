@@ -6,7 +6,6 @@ categories: [Life]
 excerpt: 인턴십 시작.
 tags:
   - Internship
-  - Android App
 ---
 
 # 두번째 인턴십 시작.
