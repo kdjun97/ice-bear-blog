@@ -85,7 +85,7 @@ tags:
 이 작업을 거치면, 이름이 동일한 repo에 fork만 해제되고 commit log가 남아있게 된다.  
 이제 commit and push로 잔디를 확인해보자!  
 
-![수정 후 2021년 커밋](/assets/images/move_repo/after_2021.jpg)  
-![수정 후 2022년 커밋](/assets/images/move_repo/after_2022.jpg)  
+![수정 후 2021년 커밋](/assets/images/move_repo/after_2021.JPG)  
+![수정 후 2022년 커밋](/assets/images/move_repo/after_2022.JPG)  
 
 교훈. 초기 셋팅을 잘 하자..  
