@@ -36,7 +36,7 @@ tags:
 우선, 위의 1번 경우를 먼저 확인한다.  
 
 **1.** Github-본인 계정 Setting-Email 에서 본인 이메일을 알아낸다.  
-![이메일 확인](/assets/images/move_repo/email.jpg)  
+![이메일 확인](/assets/images/move_repo/email.JPG)  
 
 **2.** 작업 중인 폴더에서 git 명령어로 이메일 확인(전역으로)  
 `$ git config --global --list`  
