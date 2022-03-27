@@ -39,12 +39,12 @@ tags:
 ![이메일 확인](/assets/images/move_repo/email.jpg)  
 
 **2.** 작업 중인 폴더에서 git 명령어로 이메일 확인(전역으로)  
-{$ highlight %}  
+{$ highlight Plain Text %}  
 $ git config --global --list  
 {% endhighlight %}  
 
 **3.** 1과 2가 일치하면 패스. 아니라면 변경.  
-{% highlight %}  
+{% highlight Plain Text %}  
 $ git config --global user.email "1번의 이메일 주소"  
 {% endhighlight %}  
 
