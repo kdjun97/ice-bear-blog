@@ -88,4 +88,5 @@ tags:
 ![수정 후 2021년 커밋](/assets/images/move_repo/after_2021.JPG)  
 ![수정 후 2022년 커밋](/assets/images/move_repo/after_2022.JPG)  
 
-교훈. 초기 셋팅을 잘 하자..  
+교훈. 초기 셋팅을 잘 하자 + 해결법은 있다  
+끝  
