@@ -73,13 +73,13 @@ tags:
 이제부터 내 github.io를 위한 레파지토리를 **xxx.github.io**라고 하겠다.  
 
 **1.** 기존 `xxx.github.io` repo의 이름을 바꿈(아무거나 상관 없지만 여기선 _xxx.github.io라 하겠음)  
-**2.** 새로운 repo를 만듦. 이름은 **xxx.github.io**  
-**3-1.** 로컬에 폴더를 하나 만든 후, 그곳에 _xxx.github.io를 clone한다.  
-**3-2.** $ git clone --bare https://github.com/kdjun97/_xxx.github.io.git   
-**4-1.** 만든 폴더에서 mirror push를 한다.  
-**4-2.** $ cd _xxx.github.io.git  
-**4-3.** $ git push --mirror https://github.com/kdjun97/xxx.github.io.git(에러시, .git을 지우면 됨)  
-**5.** 새 폴더를 파고, git clone https://github.com/kdjun97/xxx.github.io로 클론함.  
+**2.** 새로운 repo를 만듦. 이름은 `xxx.github.io`  
+**3-1.** 로컬에 폴더를 하나 만든 후, 그곳에 `_xxx.github.io`를 `clone`한다.  
+**3-2.** `$ git clone --bare https://github.com/kdjun97/_xxx.github.io.git`   
+**4-1.** 만든 폴더에서 `mirror push`를 한다.  
+**4-2.** `$ cd _xxx.github.io.git`  
+**4-3.** `$ git push --mirror https://github.com/kdjun97/xxx.github.io.git(에러시, .git을 지우면 됨)`  
+**5.** 새 폴더를 파고, `$ git clone https://github.com/kdjun97/xxx.github.io`로 클론함.  
 **6.** 클론한 폴더에서 작업을 하면 됨!  
 
 이 작업을 거치면, 이름이 동일한 repo에 fork만 해제되고 commit log가 남아있게 된다.  
