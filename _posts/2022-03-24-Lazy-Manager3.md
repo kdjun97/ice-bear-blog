@@ -15,6 +15,8 @@ tags:
 [Github Link](https://github.com/kdjun97/lazy-manager)  
 수정중  
 
+---  
+
 ## Stopped Project, Lazy Manager의 끝
 
 이전 포스팅.~~참고하면 좋음~~  
@@ -22,6 +24,8 @@ tags:
 [Lazy Manager2](https://kdjun97.github.io/blog/Lazy_Manager2/)  
 생각만 했었고, 개발은 끝까지 진행하지 못했던 프로젝트이다.  
 이제 이 프로젝트를 끝장낼 생각이다.  
+
+---  
 
 #### 기대효과
 
@@ -39,7 +43,9 @@ tags:
   이 프로그램은 사용자 정의 맵핑기능이 있어 더욱 많은 사용자들(기업들)이 입맛대로 바꾸어 사용할 수 있다는 장점이 있을 것이다.<br>
   또한, 활성창에서 이벤트 처리가 이루어지는 것이 아닌, 비활성창에서도 이벤트 처리를 할 수 있게 함으로써 사용자의 편의를 더욱 생각했다.(동시에 많은 일을 할 수 있음)<br>
   </p>
-</details>
+</details>  
+
+---  
   
 #### TODO
 
@@ -51,15 +57,9 @@ tags:
   - Leonardo Board 사용, serial 통신 코드 짜야함  
 **3.** 비활성 제어는 초기 버전에서는 고려 x
 
+---   
+
 #### 시작
-
-우선, 사용자가 스크립트를 직접 짤 수 있어야 한다.  
-때문에, 메모장의 기능이 필요하다.  
-우리가 익히 아는 `notepad.exe`와 비슷하게 winform을 구성한다.  
-Winform 구성은 `MenuStrip`, `TextBox`, `StatusStrip`, `OpenFileDialog`, `SaveFileDialog`를 사용하였다.  
-![UI](/assets/images/lazy_manager3/skeleton_ui.jpg)   
-
-#### TODO  
 
 **1.** load, save, new file 등의 메모장 기능들을 구현  
 
