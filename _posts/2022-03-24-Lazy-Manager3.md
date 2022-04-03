@@ -10,6 +10,11 @@ tags:
   - Arduino
 ---
 
+## Program Info
+
+[Github Link](https://github.com/kdjun97/lazy-manager)  
+수정중  
+
 ## Stopped Project, Lazy Manager의 끝
 
 이전 포스팅.~~참고하면 좋음~~  
@@ -36,24 +41,38 @@ tags:
   </p>
 </details>
   
-#### 계획
+#### TODO
 
-1. c#으로 진행할 것.  
-2. GUI(WinForm) 사용할 것.  
-3. Arduino를 접목시킬 것.(hardware 신호)  
-4. 오픈소스로 관리할 것.
-5. 유저가 코드를 짜는 것으로 사용자 정의 기능을 넣고 싶음.  
-6. 비활성 제어는 option.
-
-c#을 선택한 이유는 이미 키맵핑 프로그램을 만들던 것이 있기 때문.  
-Leonardo board는 하드웨어 신호 처리를 위해 사용.  
-
-4번까지는 무조건적으로 만들고, 그 후로는 순차적으로 옵션을 추가할 생각이다.  
-일단 이 프로젝트는 적어도 4번까지 구현을 한다면 성공한 것이다.  
+**1.** 스크립트형 프로그램(사용자 정의 가능)  
+  - base는 스크립트를 위한 메모장 클론 코딩
+  - Script를 읽고 리스트로 관리
+  - Script에 맞는 액션을 수행하는 코드 필요
+**2.** Arduino를 접목시킬 것.(hardware 신호 처리)  
+  - Leonardo Board 사용, serial 통신 코드 짜야함  
+**3.** 비활성 제어는 초기 버전에서는 고려 x
 
 #### 시작
 
-먼저, c# winform으로 기능들을 빠르게 만든다.  
+우선, 사용자가 스크립트를 직접 짤 수 있어야 한다.  
+때문에, 메모장의 기능이 필요하다.  
+우리가 익히 아는 `notepad.exe`와 비슷하게 winform을 구성한다.  
+Winform 구성은 `MenuStrip`, `TextBox`, `StatusStrip`, `OpenFileDialog`, `SaveFileDialog`를 사용하였다.  
+![UI](/assets/images/lazy_manager3/skeleton_ui.jpg)   
 
-후에, leonardo board와 serial 통신 코드는 나중에 만들 예정.  
-간단한 시리얼 통신에 대해 언급할 것.  
+#### TODO  
+
+**1.** load, save, new file 등의 메모장 기능들을 구현  
+
+우선, 사용자가 스크립트를 직접 짤 수 있어야 한다.  
+때문에, 메모장의 기능이 필요하다.  
+우리가 익히 아는 `notepad.exe`와 비슷하게 winform을 구성한다.  
+Winform 구성은 `MenuStrip`, `TextBox`, `StatusStrip`, `OpenFileDialog`, `SaveFileDialog`를 사용하였다.  
+![UI](/assets/images/lazy_manager3/skeleton_ui.jpg)   
+
+**2.** TextBox에 입력된 스크립트를 읽는 기능 필요  
+
+TextBox에 있는 내용을 parsing을 하여 키코드, 명령어로 구분함.  
+그 후, 모델 리스트에 넣어 리스트를 관리할 수 있어야 함.  
+![Model_List](/assets/images/lazy_manager3/read_script_complete.JPG)  
+> Script/ReadScript.cs에서 parsing과 hotkey를 setting해주는 기능을 담당한다.  
+
