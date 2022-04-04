@@ -78,3 +78,13 @@ TextBox에 있는 내용을 parsing을 하여 키코드, 명령어로 구분함.
 ![Model_List](/assets/images/lazy_manager3/read_script_complete.JPG)  
 > Script/ReadScript.cs에서 parsing과 hotkey를 setting해주는 기능을 담당한다.  
 
+**3.** Hotkey 설정  
+
+![Set Hotkey](/assets/images/lazy_manager3/set_hotkey.jpg)  
+설정한 key에 hook을 걸어줌.  
+
+**4.** 각 Hotkey에 command 설정  
+
+![Set Command](/assets/images/lazy_manager3/set_command.JPG)   
+각 명령에 대한 exception들이 많다. 처리해줘야한다.  
+ex) m명령어랑 k명령어, s등이 섞여있을 때의 처리  
