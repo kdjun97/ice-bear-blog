@@ -88,3 +88,13 @@ TextBox에 있는 내용을 parsing을 하여 키코드, 명령어로 구분함.
 ![Set Command](/assets/images/lazy_manager3/set_command.JPG)   
 각 명령에 대한 exception들이 많다. 처리해줘야한다.  
 ex) m명령어랑 k명령어, s등이 섞여있을 때의 처리  
+
+**시행착오**  
+
+`s` command 처리 중, delay관련 처리를 할 때, error가 났다.  
+F1을 핫키로 설정했다면, 기존에는 s 명령어가 `Thread.Sleep(2000)`의 방식으로 처리 되었다.  
+후킹도 잘 되었고, F1을 누를 때, 명령어 수행도 잘 되었지만, F1키가 잠기지 않았다.  
+그 이유는 Thread.Sleep 자체가 현재 스레드를 멈추는 것이라서 후킹 관련 액션도 2초간 멈추었기 때문이라고 판단하였다.  
+그래서 `s`명령어 처리를 `Task.Delay(int millisecond)`로 비동기식 처리를 하였다.  
+이 명령어는 task를 지연시켜주는 명령어이기 때문에 s명령어 처리와 더욱 적합했고, 테스트 결과 키가 잠기는 것을 확인할 수 있었다.  
+
