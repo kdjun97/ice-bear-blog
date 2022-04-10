@@ -104,3 +104,5 @@ F1을 핫키로 설정했다면, 기존에는 s 명령어가 `Thread.Sleep(2000)
 
 mouse_event는 좌표값의 설정이 중요한데, 화면 해상도의 배율에 따라 좌표값이 달라지는 현상이 발견되었다.  
 모든 user들의 해상도나 배율이 다를것이기 때문에 해상도 값을 처리할 방법을 생각중이다.  
+다행히, stackoverflow에 display resolution에 관한 글이 있었고, 이를 참고하여 화면 해상도 배율을 곱하며 본래 해상도를 구할 수 있었다.  
+[출처](https://stackoverflow.com/questions/5082610/get-and-set-screen-resolution)  
