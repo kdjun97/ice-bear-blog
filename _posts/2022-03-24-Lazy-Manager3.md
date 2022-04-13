@@ -93,12 +93,13 @@ ex) m명령어랑 k명령어, s등이 섞여있을 때의 처리
 
 각 핫키에 command들이 맵핑된 상태.  
 이제 각 condition에 따라 keybd_event, mouse_event command를 처리해줄 차례  
-condition은  `k`, `m`, `s`와 `q`같은 특수 명령어로 구분함.  
-`k`: keybd_event  
-`m`: mouse_event  
-`s`: sleep(delay)  
-`q`: quit(break 개념)  
-
+condition은  `k`, `m`, `s`, `q`같은 특수 명령어로 구분함.  
+```  
+k: keybd_event  
+m: mouse_event  
+s: sleep(delay)  
+q: quit(break 개념)  
+```  
 > 기본 기능은 끝남. 추후 r(loop 기능) i?(ImageSearch)기능 등을 구현할 예정  
 
 **6.** GUI  
