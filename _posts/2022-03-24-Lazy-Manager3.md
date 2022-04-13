@@ -89,6 +89,28 @@ TextBox에 있는 내용을 parsing을 하여 키코드, 명령어로 구분함.
 각 명령에 대한 exception들이 많다. 처리해줘야한다.  
 ex) m명령어랑 k명령어, s등이 섞여있을 때의 처리  
 
+**5.** Command 처리  
+
+각 핫키에 command들이 맵핑된 상태.  
+이제 각 condition에 따라 keybd_event, mouse_event command를 처리해줄 차례  
+condition은  `k`, `m`, `s`와 `q`같은 특수 명령어로 구분함.  
+`k`: keybd_event  
+`m`: mouse_event  
+`s`: sleep(delay)  
+`q`: quit(break 개념)  
+
+> 기본 기능은 끝남. 추후 r(loop 기능) i?(ImageSearch)기능 등을 구현할 예정  
+
+**6.** GUI  
+
+Form을 유저가 사용하기 쉽게 직관적으로 디자인함.  
+직관적인 main화면 외에 강력한 기능들은 `MenuStrip`에 배치.  
+또한, 스크립트 작성 규칙을 만드는 중  
+
+
+
+---  
+
 **시행착오**  
 
 `첫번째`  
