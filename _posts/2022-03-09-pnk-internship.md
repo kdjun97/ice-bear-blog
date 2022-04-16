@@ -54,5 +54,7 @@ ESP32 Board에서 data I/O 처리를 해주는 app 개발
 
 업무 : 기획 및 앱 개발  
 Wireframe 제작, prototype 제작 (Figma 이용 - 기획)  
-DB Schema 설계  (MySQL)  
- 
+DB Schema 설계 (DrawSQL이용)  
+Server: Dothom 웹 호스팅  
+FTP: FileZila  
+Flutter + MySQL(php코드)이용  
