@@ -14,7 +14,7 @@ layout: default
 					<i class="fa fa-paw" aria-hidden="true"></i>
 				{% endfor %}
 			</div>
-			<ul class="posts-list tab-one-list" id="pag-itemContainer-one">
+			<ul class="posts-list tab-one-list tab-hidden" id="pag-itemContainer-one">
 				{% assign counter-one = 0 %}
 				{% for post in site.categories.Tech %}
 				{% assign counter-one = counter-one | plus: 1 %}
@@ -36,7 +36,7 @@ layout: default
 				</li>
 				{% endfor %}
 			</ul>
-			<ul class="posts-list tab-two-list" id="pag-itemContainer-two">
+			<ul class="posts-list tab-two-list tab-hidden" id="pag-itemContainer-two">
 				{% assign counter-two = 0 %}
 				{% for post in site.categories.Life %}
 				{% assign counter-two = counter-two | plus: 1 %}
