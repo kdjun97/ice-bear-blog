@@ -26,7 +26,7 @@ $(document).ready(function () {
 		$(".tab-one").addClass("active");
 		$(".tab-two").removeClass("active");
 		$(".tab-two-list").addClass("tab-hidden");
-		//$(".tab-one-list").removeClass("tab-hidden");
+		$(".tab-one-list").removeClass("tab-hidden");
 		$(".page-holder-two").addClass("tab-hidden");
 		$(".page-holder-one").removeClass("tab-hidden");
 	}
